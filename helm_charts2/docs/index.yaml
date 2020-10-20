@@ -1,0 +1,153 @@
+apiVersion: v1
+entries:
+  artemis:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2020-01-17T14:35:04.542470098-06:00
+    description: A Helm chart for Kubernetes
+    digest: 59fb95566bbc97834f12f5270959bdc8dda0613fadb1d7445790e9858419e2b0
+    name: artemis
+    urls:
+    - https://fuchicorp.github.io/helm_charts/artemis-0.1.0.tgz
+    version: 0.1.0
+  consul:
+  - apiVersion: v1
+    appVersion: 1.5.3
+    created: 2020-01-17T14:35:04.543316258-06:00
+    description: Highly available and distributed service discovery and key-value
+      store designed with support for the modern data center to make distributed systems
+      and configuration easy.
+    digest: fec7a0f9e83c1ee85af0078426c560fac3800256cb340b2bbcadf8cdfc936242
+    home: https://github.com/hashicorp/consul
+    icon: https://raw.githubusercontent.com/hashicorp/consul/bce3809dfca37b883828c3715b84143dd71c0f85/website/source/assets/images/favicons/android-chrome-512x512.png
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    name: consul
+    sources:
+    - https://github.com/kelseyhightower/consul-on-kubernetes
+    urls:
+    - https://fuchicorp.github.io/helm_charts/consul-3.9.4.tgz
+    version: 3.9.4
+  metallb:
+  - apiVersion: v1
+    appVersion: 0.8.1
+    created: 2020-01-17T14:35:04.54383042-06:00
+    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
+      clusters
+    digest: 4c3a4058fd56d582b270607f71773400a8e28484ad6b3a39441df862d55d8b4c
+    home: https://metallb.universe.tf
+    icon: https://metallb.universe.tf/images/logo.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    maintainers:
+    - email: dave@natulte.net
+      name: danderson
+    name: metallb
+    urls:
+    - https://fuchicorp.github.io/helm_charts/metallb-0.12.0.tgz
+    version: 0.12.0
+  metrics-server:
+  - apiVersion: v1
+    appVersion: 0.3.6
+    created: 2020-01-17T14:35:04.544321243-06:00
+    description: Metrics Server is a cluster-wide aggregator of resource usage data.
+    digest: 361318cf92d8a6d3c360cb63ca8244f292150d4f8e9f5dd0424e1ada9bae569e
+    home: https://github.com/kubernetes-incubator/metrics-server
+    keywords:
+    - metrics-server
+    maintainers:
+    - email: o.with@sportradar.com
+      name: olemarkus
+    - email: k.aasan@sportradar.com
+      name: kennethaasan
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-incubator/metrics-server
+    urls:
+    - https://fuchicorp.github.io/helm_charts/metrics-server-2.8.9.tgz
+    version: 2.8.9
+  nexus:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2020-01-17T14:35:04.544595155-06:00
+    description: A Helm chart for Kubernetes
+    digest: 2b52dffc6e2585d20e32297ff1a38faec4f7019396eee495877e286c63f0d2d8
+    name: nexus
+    urls:
+    - https://fuchicorp.github.io/helm_charts/nexus-0.1.0.tgz
+    version: 0.1.0
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: 2020-01-17T14:35:04.54505618-06:00
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: db880c287d85099f45f10c8428bc0c080278d1b741cba36d39d67d99edd911d0
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: devopnetfl@gmail.com
+      name: florin
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://fuchicorp.github.io/helm_charts/nfs-client-provisioner-1.2.8.tgz
+    version: 1.2.8
+  nginx-ingress:
+  - apiVersion: v1
+    appVersion: 0.26.2
+    created: 2020-01-17T14:35:04.546318271-06:00
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: a183d33c2e156567119af9d769963ac1f03bb5b0c382a3d0632975d1e9a85bf9
+    engine: gotpl
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.10.0-0'
+    maintainers:
+    - name: ChiefAlexander
+    - email: Trevor.G.Wood@gmail.com
+      name: taharah
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://fuchicorp.github.io/helm_charts/nginx-ingress-1.28.2.tgz
+    version: 1.28.2
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.15.2
+    created: 2020-01-17T14:35:04.547934482-06:00
+    description: Prometheus is a monitoring system and time series database.
+    digest: 06cdd63bdd09be8ddffcca05a9c03ea67470bf1796e06d4b21bb779e3f9b627e
+    engine: gotpl
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: devopsfl@gmail.com
+      name: florin
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    tillerVersion: '>=2.8.0'
+    urls:
+    - https://fuchicorp.github.io/helm_charts/prometheus-10.0.1.tgz
+    version: 10.0.1
+generated: 2020-01-17T14:35:04.542015871-06:00
