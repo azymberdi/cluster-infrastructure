@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-hostk8s-prod
+spec:
+  acme:
+    email: fuchiropsolution@gmail.com
+    privateKeySecretRef:
+      name: letsencrypt-hostk8s-issuer-account-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - http01:
+        ingress:
+          class: nginx

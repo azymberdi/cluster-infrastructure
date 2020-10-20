@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: appone
+  labels:
+    app: appone
+spec:
+  containers:
+  - image: nginx:latest
+    name: appone-container
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
+    resources: {}
