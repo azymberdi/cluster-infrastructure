@@ -1,2 +1,0 @@
-domain_name: ${deployment_endpoint}
-email: ${email}
